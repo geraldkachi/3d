@@ -56,7 +56,7 @@ export const textVariant = (delay?: string) => {
     };
   };
 
-  export const slideIn = (direction?: string, type?: string, delay?: string, duration?: string) => {
+  export const slideIn = (direction?: string | number, type?: string | number, delay?: string | number, duration?: string | number) => {
     return {
       hidden: {
         x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
