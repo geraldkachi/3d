@@ -173,25 +173,27 @@ import {
     {
       testimonial:
         "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
+      name: "Onwordi Prince Alfred",
+      // designation: "CFO",
+      designation: "CEO",
+      company: "Lini Lite Inc",
+      // company: "Acme Co",
       image: "https://randomuser.me/api/portraits/women/4.jpg",
     },
     {
       testimonial:
         "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
+      name: "Aderemi Dare Daniel",
       designation: "COO",
-      company: "DEF Corp",
+      company: "Dani Corp",
       image: "https://randomuser.me/api/portraits/men/5.jpg",
     },
     {
       testimonial:
         "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
+      name: "Akaninyene Asanga",
       designation: "CTO",
-      company: "456 Enterprises",
+      company: "AkanWealth Enterprises",
       image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
   ];
