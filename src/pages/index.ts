@@ -1,1 +1,2 @@
-import { default as Portfolio } from './Portfolio'
+import Portfolio from './Portfolio'
+export { Portfolio }

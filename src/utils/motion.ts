@@ -1,4 +1,6 @@
-export const textVariant = (delay?: string) => {
+import { TargetAndTransition } from "framer-motion";
+
+export const textVariant: any = (delay?: string) => {
     return {
       hidden: {
         y: -50,
@@ -16,7 +18,7 @@ export const textVariant = (delay?: string) => {
     };
   };
 
-  export const fadeIn = (direction?: string | number, type?: string | number, delay?: string | number, duration?: string | number) => {
+  export const fadeIn: any = (direction?: string | number, type?: string | number, delay?: string | number, duration?: string | number) => {
     return {
       hidden: {
         x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
@@ -37,7 +39,7 @@ export const textVariant = (delay?: string) => {
     };
   };
 
-  export const zoomIn = (delay?: string, duration?: string) => {
+  export const zoomIn: any = (delay?: string, duration?: string) => {
     return {
       hidden: {
         scale: 0,
@@ -56,7 +58,7 @@ export const textVariant = (delay?: string) => {
     };
   };
 
-  export const slideIn = (direction?: string | number, type?: string | number, delay?: string | number, duration?: string | number) => {
+  export const slideIn: any = (direction?: string | number, type?: string | number, delay?: string | number, duration?: string | number) => {
     return {
       hidden: {
         x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
@@ -75,7 +77,7 @@ export const textVariant = (delay?: string) => {
     };
   };
 
-export const staggerContainer = (staggerChildren?: string | number, delayChildren?: string | number) => {
+export const staggerContainer: TargetAndTransition | any = (staggerChildren?: string | number, delayChildren?: string | number) => {
     return {
       hidden: {},
       show: {

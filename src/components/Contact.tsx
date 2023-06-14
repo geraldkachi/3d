@@ -1,4 +1,4 @@
-import { ChangeEvent, DetailedHTMLProps, FormEvent, FormHTMLAttributes, LegacyRef, MutableRefObject, Ref, useRef, useState } from "react";
+import { ChangeEvent, FormEvent,useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
@@ -8,7 +8,7 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
 const Contact = () => {
-  const formRef = useRef<MutableRefObject<Ref<HTMLDivElement> | undefined | null | LegacyRef<HTMLFormElement>>>(null);
+  const formRef = useRef(null)
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -17,7 +17,7 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement & EventTarget>) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement & HTMLTextAreaElement & EventTarget>) => {
     const { target } = e;
     const { name, value } = target;
 

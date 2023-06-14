@@ -6,7 +6,6 @@ import { styles } from "../styles";
 import { services } from "../contants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-import { HTMLAttributes } from 'react';
 
 interface Props {
   index: number
@@ -25,11 +24,11 @@ const ServiceCard = ({ index, title, icon }: Props) => {
         className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
       >
         <div
-          options={{
-            max: 45,
-            scale: 1,
-            speed: 450,
-          }}
+          // options={{
+          //   max: 45,
+          //   scale: 1,
+          //   speed: 450,
+          // }}
           className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
         >
           <img

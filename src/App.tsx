@@ -1,7 +1,7 @@
 import './App.css'
 import { Suspense } from 'react'
 import { Route, Routes } from 'react-router-dom'
-import Portfolio from './pages/Portfolio'
+import { Portfolio } from './pages'
 
 document.location.pathname === "/" && window.scrollTo({ top: 0, behavior: 'smooth' })
 

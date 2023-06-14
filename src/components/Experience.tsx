@@ -8,10 +8,21 @@ import { experiences } from '../contants';
 import { textVariant } from '../utils/motion';
 import "react-vertical-timeline-component/style.min.css";
 
+
+interface Props {
+  experience: {
+    index?: string;
+    title: string;
+    company_name: string;
+    icon: string;
+    iconBg: string;
+    date: string;
+    points: string[];
+  }
+}
 const Experience = () => {
 
-
-  const ExperienceCard = ({ experience }: any) => {
+  const ExperienceCard = ({ experience }: Props) => {
     return (
       <>
         <VerticalTimelineElement
@@ -43,7 +54,7 @@ const Experience = () => {
           </div>
 
           <ul className='mt-5 list-disc ml-5 space-y-2'>
-            {experience.points.map((point, index) => (
+            {experience.points.map((point: string, index: number) => (
               <li
                 key={`experience-point-${index}`}
                 className='text-white-100 text-[14px] pl-1 tracking-wider'
