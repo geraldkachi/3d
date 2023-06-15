@@ -5,16 +5,15 @@ import { About, Contact, Experience, Feedbacks, Hero, Navbar, StarsCanvas, Tech,
 const Portfolio = () => {
     return (
         <div className='relative z-0 bg-primary'>
-            <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center relative z-0'>
+            <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
                 <Navbar />
                 <Hero />
-                {/* <StarsCanvas /> */}
             </div>
+            <About />
+            <Experience />
+            <Tech />
+            <Works />
             <div className='relative z-0'>
-                <About />
-                <Experience />
-                <Tech />
-                <Works />
                 <Feedbacks />
                 <Contact />
                 <StarsCanvas />
