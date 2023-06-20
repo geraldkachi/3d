@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+// import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
   return (
@@ -26,6 +26,7 @@ const Hero = () => {
       </div>
 
       {/* <ComputersCanvas /> */}
+      {/* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:AN…SttGNKW1VYx-Kh6hEn1uD6WvxLeTPKEhVJDK0C4g&usqp=CAU" className="w-10 h-32" alt="plane" /> */}
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
