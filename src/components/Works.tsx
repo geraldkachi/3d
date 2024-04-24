@@ -32,7 +32,7 @@ const ProjectCard = ({
         }}
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
-        <div className='relative w-full h-[230px]'>
+        <a href="#" className='relative w-full h-[230px]'>
           <img
             src={image}
             alt='project_image'
@@ -51,7 +51,7 @@ const ProjectCard = ({
               />
             </div>
           </div>
-        </div>
+        </a>
 
         <div className='mt-5'>
           <h3 className='text-white font-bold text-[24px]'>{name}</h3>
